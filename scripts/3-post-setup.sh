@@ -132,6 +132,19 @@ else
 fi
 plymouth-set-default-theme -R arch-glow # sets the theme and runs mkinitcpio
 echo 'Plymouth theme installed'
+echo -ne "
+-------------------------------------------------------------------------
+               Installing linux-wifi-hotspot
+-------------------------------------------------------------------------
+"
+pacman -S --noconfirm --needed linux-wifi-hotspot
+echo -ne "
+-------------------------------------------------------------------------
+               Installing vulkan
+-------------------------------------------------------------------------
+"
+pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
+echo -ne "
 
 echo -ne "
 -------------------------------------------------------------------------
@@ -150,3 +163,4 @@ rm -r /home/$USERNAME/ArchInstall
 
 # Replace in the same state
 cd $pwd
+
