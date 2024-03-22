@@ -137,15 +137,13 @@ echo -ne "
                Installing linux-wifi-hotspot
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed linux-wifi-hotspot
+pacman -S --noconfirm --needed bash util-linux procps hostapd iproute2 iw iwconfig haveged dnsmasq iptables linux-wifi-hotspot
 echo -ne "
 -------------------------------------------------------------------------
                Installing vulkan
 -------------------------------------------------------------------------
 "
 pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
-echo -ne "
-
 echo -ne "
 -------------------------------------------------------------------------
                     Cleaning
