@@ -17,14 +17,19 @@ echo -ne "
 sudo pacman -Syu
 echo -ne "
 -------------------------------------------------------------------------
+               Installing vulkan
+-------------------------------------------------------------------------
+"
+pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
+echo -ne "
+-------------------------------------------------------------------------
                Installing linux-wifi-hotspot
 -------------------------------------------------------------------------
 "
-yay -S --noconfirm --needed linux-wifi-hotspot
+yay -S --noconfirm linux-wifi-hotspot
 echo -ne "
 -------------------------------------------------------------------------
                Installing sc-controller
 -------------------------------------------------------------------------
 "
-yay -S --noconfirm --needed sc-controller
-echo -ne "
+yay -S --noconfirm sc-controller

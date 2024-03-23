@@ -134,12 +134,6 @@ plymouth-set-default-theme -R arch-glow # sets the theme and runs mkinitcpio
 echo 'Plymouth theme installed'
 echo -ne "
 -------------------------------------------------------------------------
-               Installing vulkan
--------------------------------------------------------------------------
-"
-pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
-echo -ne "
--------------------------------------------------------------------------
                     Cleaning
 -------------------------------------------------------------------------
 "
