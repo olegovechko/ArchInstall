@@ -20,7 +20,7 @@ echo -ne "
                Installing vulkan
 -------------------------------------------------------------------------
 "
-pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
+sudo pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
 echo -ne "
 -------------------------------------------------------------------------
                Installing linux-wifi-hotspot
