@@ -140,16 +140,10 @@ echo -ne "
 pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
 echo -ne "
 -------------------------------------------------------------------------
-               Installing linux-wifi-hotspot
+               Copy post-install.ch
 -------------------------------------------------------------------------
 "
-yay -S --noconfirm --needed linux-wifi-hotspot
-echo -ne "
--------------------------------------------------------------------------
-               Installing sc-controller
--------------------------------------------------------------------------
-"
-yay -S --noconfirm --needed sc-controller
+cp -fv $HOME/ArchInstall/post-setup.sh $HOME/
 echo -ne "
 -------------------------------------------------------------------------
                     Cleaning
