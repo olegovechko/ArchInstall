@@ -140,12 +140,6 @@ echo -ne "
 pacman -S --noconfirm --needed vulkan-icd-loader vulkan-radeon vulkan-headers vulkan-validation-layers vulkan-tools amdvlk
 echo -ne "
 -------------------------------------------------------------------------
-               Copy post-install.ch
--------------------------------------------------------------------------
-"
-cp -fv $HOME/ArchInstall/post-setup.sh /
-echo -ne "
--------------------------------------------------------------------------
                     Cleaning
 -------------------------------------------------------------------------
 "
