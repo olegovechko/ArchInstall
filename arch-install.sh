@@ -32,6 +32,7 @@ echo -ne "
     fi
     ( arch-chroot /mnt $HOME/ArchInstall/scripts/3-post-setup.sh )|& tee 3-post-setup.log
     cp -v *.log /mnt/home/$USERNAME
+    mv -fv /post-setup.sh /mnt/home/$USERNAME/
 
 echo -ne "
 -------------------------------------------------------------------------
