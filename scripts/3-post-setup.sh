@@ -143,7 +143,7 @@ echo -ne "
                Copy post-install.ch
 -------------------------------------------------------------------------
 "
-cp -fv $HOME/ArchInstall/post-setup.sh $HOME/
+cp -fv $HOME/ArchInstall/post-setup.sh /mnt/home/$USERNAME/
 echo -ne "
 -------------------------------------------------------------------------
                     Cleaning
