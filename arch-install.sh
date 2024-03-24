@@ -34,6 +34,10 @@ echo -ne "
     cp -v *.log /mnt/home/$USERNAME
     cp -fv post-setup.sh /mnt/home/$USERNAME/
     chmod +x /mnt/home/$USERNAME/post-setup.sh
+    cp -fv download-server.sh /mnt/home/$USERNAME/
+    chmod +x /mnt/home/$USERNAME/download-server.sh
+    cp -fv start-hotspot.sh /mnt/home/$USERNAME/
+    chmod +x /mnt/home/$USERNAME/start-hotspot.sh
 
 echo -ne "
 -------------------------------------------------------------------------
