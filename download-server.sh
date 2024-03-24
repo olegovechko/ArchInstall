@@ -1,5 +1,5 @@
 #!/bin/bash
-#https://drive.google.com/file/d/11kyzmcBYfyVFVYmedeUACvEms3Nd_mcy/view?usp=drive_link
+xpg-open 'https://drive.google.com/file/d/11kyzmcBYfyVFVYmedeUACvEms3Nd_mcy/view?usp=drive_link'
 
 #!/bin/bash
 
@@ -7,12 +7,12 @@
 
 # $1 = file ID
 # $2 = file name
-ggID='11kyzmcBYfyVFVYmedeUACvEms3Nd_mcy'  
-fileNmae='LinuxServer.zip' 
+# ggID='11kyzmcBYfyVFVYmedeUACvEms3Nd_mcy'  
+# fileNmae='LinuxServer.zip' 
 
-URL="https://docs.google.com/uc?export=download&id=${ggID}"
+# URL="https://docs.google.com/uc?export=download&id=${ggID}"
 
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate $URL -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=${ggID}" -O ${filename} && rm -rf /tmp/cookies.txt
+# wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate $URL -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=${ggID}" -O ${filename} && rm -rf /tmp/cookies.txt
 
 # ggID='11kyzmcBYfyVFVYmedeUACvEms3Nd_mcy'  
 # ggURL='https://drive.google.com/uc?export=download'  
