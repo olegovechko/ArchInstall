@@ -23,6 +23,7 @@ autoconf
 automake
 awesome-terminal-fonts
 bash-completion
+--END OF MINIMAL INSTALL--
 bind
 bison
 bluez
@@ -109,4 +110,3 @@ zip
 zsh
 zsh-syntax-highlighting
 zsh-autosuggestions
---END OF MINIMAL INSTALL--
